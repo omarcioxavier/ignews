@@ -18,8 +18,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
     const email = session?.user?.email ?? "";
 
-    console.log("Email: " + email);
-
     if (req.method !== "POST" || email === "") {
         res.setHeader("Allow", "POST");
         res.status(405).end("Method not allowed");
@@ -33,8 +31,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     console.log(customerId);
 
     if (!customerId) {
-        console.log("CRIOU USER NO STRIPE E ATUALIZOU NO FAUNA");
-
         const stripeCustomer = await stripe.customers.create({ email: email });
 
         await fauna.query(
