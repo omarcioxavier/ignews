@@ -1,0 +1,22 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "package"
+  },
+  "title": {
+    "__TYPE__": "FieldContent",
+    "value": "tail",
+    "type": "Text"
+  },
+  "content": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Voluptate qui nisi cillum dolore ad qui aliqua est. Aliquip aliqua tempor mollit aute magna laborum ea dolor irure."
+        }
+      }
+    ]
+  }
+}
